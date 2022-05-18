@@ -9,7 +9,7 @@ using MailKit;
 using MimeKit;
 using System.IO;
 
-namespace ConsoleApp1
+namespace ExtractionPJ
 {
     class Program
     {
