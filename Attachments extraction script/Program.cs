@@ -38,7 +38,7 @@ namespace ExtractionPJ
                     System.Diagnostics.Debug.WriteLine("Total messages: {0}", inbox.Count);
                     System.Diagnostics.Debug.WriteLine("Recent messages: {0}", inbox.Recent);
 
-                    // Parcours de tous les messages (!!! il y a de fortes chances qu'à chaque fois que le programme est lancé, tous les messages sont à nouveau chargés)
+                    // Parcours de tous les messages récupérés
                     var listUID = inbox.Fetch(0, -1, MessageSummaryItems.UniqueId | MessageSummaryItems.Size | MessageSummaryItems.Flags);
 
                     foreach (var item in listUID)
